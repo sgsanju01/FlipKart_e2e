@@ -1,5 +1,7 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,11 +11,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.BrowserFactory;
+import utils.CommonElementAction;
 
 public class FlipkartHomePage {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private Actions actions;
+	private JavascriptExecutor js;
+	private CommonElementAction commonElementAction;
+	
 
 	/**
 	 * Constructor to initialize the FlipkartHomePage elements.
@@ -23,6 +29,8 @@ public class FlipkartHomePage {
 		this.driver = BrowserFactory.getDriver();
 		this.wait = BrowserFactory.getWait();
 		this.actions = new Actions(driver);
+		this.js = (JavascriptExecutor) driver;
+		this.commonElementAction = new CommonElementAction(driver,wait);
 
 		PageFactory.initElements(driver, this);
 	}
@@ -44,23 +52,30 @@ public class FlipkartHomePage {
 	 */
 	public void closeLoginPopup() {
 		try {
-			wait.until(ExpectedConditions.visibilityOf(loginCloseButton)).click();
+		wait.until(ExpectedConditions.visibilityOf(loginCloseButton)).click();
 		} catch (Exception e) {
-			System.out.println("Login popup not displayed or could not be closed.");
+		System.out.println("Login popup not displayed or could not be closed.");
 		}
 	}
 
+	
 	public void clickOnAppliances() {
-		wait.until(ExpectedConditions.visibilityOf(appliancesLink)).click();
+		try{
+			commonElementAction.visibilityOfElement(appliancesLink);
+			js.executeScript("arguments[0].click()", appliancesLink);
+		} catch(TimeoutException e) {
+			System.out.println("Appliance link was not visible within the timeout");
+		}
 	}
 
+	
 	public void hoverAndClickOnTvAndAppliances() {
-		wait.until(ExpectedConditions.visibilityOf(tvAndAppliancesMenu));
+		commonElementAction.visibilityOfElement(tvAndAppliancesMenu);
 		actions.moveToElement(tvAndAppliancesMenu).perform();
 	}
 
+	
 	public void clickOnWindowAcButton() {
-		wait.until(ExpectedConditions.visibilityOf(windowAndACsButton)).click();
-		// actions.moveToElement(windowAndACsButton).perform();
+		commonElementAction.visibilityOfElement(windowAndACsButton).click();
 	}
 }

@@ -16,7 +16,6 @@ public class ComparePage {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
-	
 
 	/**
 	 * Constructor to initialize the FlipkartHomePage elements.
@@ -25,7 +24,6 @@ public class ComparePage {
 
 		this.driver = BrowserFactory.getDriver();
 		this.wait = BrowserFactory.getWait();
-		
 
 		PageFactory.initElements(driver, this);
 	}
@@ -55,8 +53,8 @@ public class ComparePage {
 
 		for (int i = 0; i < ACsProductName.size(); i++) {
 
-			System.out.println(i+1 + ": " + ACsProductName.get(i).getText() + ", Price: "
-					+ ACsProductPrice.get(i).getText());
+			System.out.println(
+					i + 1 + ": " + ACsProductName.get(i).getText() + ", Price: " + ACsProductPrice.get(i).getText());
 		}
 
 	}
@@ -67,16 +65,17 @@ public class ComparePage {
 	 */
 	public void clickAddToCartButton() {
 		for (int i = 1; i <= 4; i++) {
-			// Find all "Add to Cart" buttons *within* the loop to handle DOM changes
-			// List<WebElement> addToCartButtons =
-			// driver.findElements(By.xpath("//div[@class='col col-1-5
-			// PK-Chh']/button[contains(text(), 'Add to cart')]"));
 
 			List<WebElement> addToCartButtons = driver.findElements(By.cssSelector(".col.col-1-5.PK-Chh > button"));
 			if (addToCartButtons.size() >= i) { // Check if there are enough buttons
 				WebElement addButton = addToCartButtons.get(i - 1); // 0-based index
+				//Skip if the button is not enabled (disabled/sponsored)
+				if (!addButton.isEnabled()) {
+					System.out.println("Add to cart button is disabled for index: " + i + " (Skipping sponsored?)");
+					continue;
+				}
 				wait.until(ExpectedConditions.elementToBeClickable(addButton)); // Wait for it to be clickable
-				System.out.println("Clicking 'Add to Cart' for product " + i);
+				System.out.println("adding product for --> " + i);
 				addButton.click();
 
 				// Wait for navigation to cart or Place Order button
@@ -85,7 +84,7 @@ public class ComparePage {
 							ExpectedConditions.visibilityOf(placeOrderButton)));
 
 					if (driver.getCurrentUrl().contains("/viewcart/")) {
-						System.out.println("Navigated to Cart. Navigating back...");
+						// System.out.println("Navigated to Cart. Navigating back...");
 						driver.navigate().back();
 						wait.until(ExpectedConditions.urlContains("/compare")); // Wait to be back on compare
 					} else if (placeOrderButton.isDisplayed()) {
@@ -107,7 +106,7 @@ public class ComparePage {
 				}
 
 			}
-			System.out.println("Finished adding products to cart (or attempting to).");
+			System.out.println("Finished adding products to cart...");
 		}
 
 	}

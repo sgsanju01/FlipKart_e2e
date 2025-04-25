@@ -6,7 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/features/flipkart_e2e.feature",
 				glue = "stepDefinitions",
-				plugin = {"pretty"}
+				plugin = {"pretty",
+						"html:target/cucumber-reports/cucumber.html",
+						"json:target/cucumber-reports/cucumber.json",
+						"junit:target/cucumber-reports/cucumber.xml"}
 				)
 
 
