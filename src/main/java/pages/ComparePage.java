@@ -11,11 +11,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.BrowserFactory;
+import utils.CommonElementAction;
 
 public class ComparePage {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
+	private CommonElementAction commonElementAction;
+	
 
 	/**
 	 * Constructor to initialize the FlipkartHomePage elements.
@@ -24,7 +27,7 @@ public class ComparePage {
 
 		this.driver = BrowserFactory.getDriver();
 		this.wait = BrowserFactory.getWait();
-
+		this.commonElementAction = new CommonElementAction(driver,wait);
 		PageFactory.initElements(driver, this);
 	}
 
