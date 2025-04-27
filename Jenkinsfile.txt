@@ -1,0 +1,33 @@
+pipeline {
+    agent any // Specify where the pipeline will run
+
+    stages { // Define the different stages of the pipeline
+        stage('Checkout') { // Stage for checking out the source code
+            steps { // Steps to be executed in this stage
+                // Will contain the checkout command
+		checkout scm
+            }
+        }
+        stage('Build') { // Stage for building the Java project
+            steps {
+                // Will contain the Maven build command
+		sh 'mvn clean package -DskipTests' // Execute Maven clean and package, skipping tests
+
+            }
+        }
+        stage('Test') { // Stage for running your Selenium tests
+            steps {
+                // Will contain the Maven test command
+		sh 'mvn test' // Execute Maven to run the tests
+            }
+        }
+        stage('Archive Artifacts') { // Stage for archiving build outputs (like reports)
+            steps {
+                // Will contain the artifact archiving command
+		archiveArtifacts 'target/*.jar' // Archive any .jar files in the target directory
+                archiveArtifacts 'target/surefire-reports/*' // Archive JUnit test reports
+
+            }
+        }
+    }
+}
