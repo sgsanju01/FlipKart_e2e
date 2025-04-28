@@ -1,0 +1,8 @@
+pages\GoogleSearchPage.class
+pages\ComparePage.class
+utils\CommonElementAction.class
+utils\BrowserFactory.class
+utils\ConfigReader.class
+pages\FlipkartHomePage.class
+pages\ViewCartPage.class
+pages\WindowACListPage.class

@@ -44,7 +44,7 @@ public class BrowserFactory {
 			}
 
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
 
 		return driver;
@@ -59,7 +59,7 @@ public class BrowserFactory {
 	public static WebDriverWait getWait() {
 
 		if (wait == null) {
-			wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+			wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
 		}
 		return wait;
 	}
