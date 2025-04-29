@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="80.771" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Flipkart e2e Automation Flow" name="Browse and Compare Window ACs and Check Availability" time="80.515">
+<testsuite name="Cucumber" time="69.203" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Flipkart e2e Automation Flow" name="Browse and Compare Window ACs and Check Availability" time="68.94">
 <system-out><![CDATA[
 Given I launch the browser and open Google..................................passed
 When I type 'Flipkart' in the Google search field...........................passed
