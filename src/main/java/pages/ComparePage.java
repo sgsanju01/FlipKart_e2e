@@ -117,7 +117,7 @@ public class ComparePage {
 	}
 
 	public void clickCartButton() {
-		wait.until(ExpectedConditions.visibilityOf(cartLogoButton)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton)).click();
 
 	}
 
