@@ -59,7 +59,7 @@ public class BrowserFactory {
 	public static WebDriverWait getWait() {
 
 		if (wait == null) {
-			wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
+			wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
 		}
 		return wait;
 	}

@@ -37,8 +37,8 @@ public class ComparePage {
 	@FindBy(xpath = "(//div[@class='row'][div/div/div[@class='Nx9bqj']])[last()]//div[contains(@class,'col-1-5')]//div[@class='Nx9bqj']")
 	private List<WebElement> ACsProductPrice;
 
-	//@FindBy(xpath = ".//button[contains(text(),'Add to cart')]")
-	@FindBy(css = "a._9Wy27C > span:nth-child(3)")
+	@FindBy(xpath = ".//button[contains(text(),'Add to cart')]")
+	
 	private List<WebElement> addToCartButtons;
 
 	@FindBy(xpath = "//button[contains(text(),'GO TO CART') and not (@disabled)]")
@@ -47,7 +47,8 @@ public class ComparePage {
 	@FindBy(xpath = "//span[text()='Place Order']")
 	private WebElement placeOrderButton;
 
-	@FindBy(xpath = "//span[text()='Cart']")
+	//@FindBy(xpath = "//span[text()='Cart']")
+	@FindBy(css = "a._9Wy27C > span:nth-child(3)")
 	private WebElement cartLogoButton;
 
 	public void printProductDetails() {
