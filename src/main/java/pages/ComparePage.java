@@ -3,8 +3,10 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,6 +20,8 @@ public class ComparePage {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private CommonElementAction commonElementAction;
+	private Actions actions;
+	private JavascriptExecutor js;
 	
 
 	/**
@@ -27,7 +31,9 @@ public class ComparePage {
 
 		this.driver = BrowserFactory.getDriver();
 		this.wait = BrowserFactory.getWait();
+		this.actions = new Actions(driver);
 		this.commonElementAction = new CommonElementAction(driver,wait);
+		this.js = (JavascriptExecutor) driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -48,7 +54,7 @@ public class ComparePage {
 	private WebElement placeOrderButton;
 
 	//@FindBy(xpath = "//span[text()='Cart']")
-	@FindBy(css = "a._9Wy27C > span:nth-child(3)")
+	@FindBy(css = "a[href^='/viewcart']")
 	private WebElement cartLogoButton;
 
 	public void printProductDetails() {
@@ -116,14 +122,39 @@ public class ComparePage {
 
 	}
 
-	public void clickCartButton() {
-		System.out.println(driver.getCurrentUrl());
-		System.out.println("cart button is disaplayed : " + cartLogoButton.isEnabled() + "\n" + "tag name is : " + cartLogoButton.getTagName() );
-		if(cartLogoButton.isEnabled()) {
-			wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton)).click();
-		}
-		
+	public void clickCartButton(){
+		System.out.println("Current URL: " + driver.getCurrentUrl());
+		System.out.println("Cart button is displayed and enabled: " + cartLogoButton.isDisplayed() + " - " + cartLogoButton.isEnabled());
+		System.out.println("Tag name of cart button: " + cartLogoButton.getTagName());
 
+		if (cartLogoButton.isDisplayed() && cartLogoButton.isEnabled()) {
+			try {
+				wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton)).click();
+				System.out.println("Cart button clicked successfully using WebDriverWait.");
+			} catch (Exception e) {
+				System.err.println("WebDriverWait click failed: " + e.getMessage());
+				System.out.println("Attempting click using JavaScriptExecutor.");
+				try {
+					js.executeScript("arguments[0].click();", cartLogoButton);
+					System.out.println("Cart button clicked successfully using JavaScriptExecutor.");
+				} catch (Exception ex) {
+					System.err.println("JavaScriptExecutor click failed: " + ex.getMessage());
+					System.out.println("Attempting click using Actions class.");
+					try {
+						
+						actions.moveToElement(cartLogoButton).click().perform();
+						System.out.println("Cart button clicked successfully using Actions class.");
+					} catch (Exception exc) {
+						System.err.println("Actions class click failed: " + exc.getMessage());
+						System.err.println("Failed to click cart button using multiple methods.");
+					}
+				}
+			}
+		} else {
+			System.out.println("Cart button is either not displayed or not enabled. Cannot click.");
+		}
 	}
+
+	
 
 }
