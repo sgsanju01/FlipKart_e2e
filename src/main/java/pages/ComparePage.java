@@ -117,7 +117,12 @@ public class ComparePage {
 	}
 
 	public void clickCartButton() {
-		wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton)).click();
+		System.out.println(driver.getCurrentUrl());
+		System.out.println("cart button is disaplayed : " + cartLogoButton.isEnabled() + "\n" + "tag name is : " + cartLogoButton.getTagName() );
+		if(cartLogoButton.isEnabled()) {
+			wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton)).click();
+		}
+		
 
 	}
 
