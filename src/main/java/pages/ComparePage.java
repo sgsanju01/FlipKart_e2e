@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -157,6 +158,42 @@ public class ComparePage {
 			System.out.println("Cart button is either not displayed or not enabled. Cannot click.");
 		}
 	}
+	
+	public void clickCartButtonWhenReady() {
+      // WebElement cartLogoButton = null; // Declare cartButton outside the try block
+        try {
+            System.out.println("Waiting for cart button to be clickable");
+            cartLogoButton = wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton));
+            System.out.println("Cart button is clickable");
+            cartLogoButton.click();
+            System.out.println("Cart button clicked successfully using WebDriverWait.");
+            return; // Exit the method if successful
+        } catch (TimeoutException e) {
+            System.err.println("WebDriverWait click failed: " + e.getMessage());
+            // Continue to alternative click methods
+        }
+
+        // Alternative click methods (if WebDriverWait fails)
+        if (cartLogoButton != null) { // Check if cartButton was located
+            try {
+                js.executeScript("arguments[0].click();", cartLogoButton);
+                System.out.println("Cart button clicked successfully using JavaScriptExecutor.");
+                return;
+            } catch (Exception ex) {
+                System.err.println("JavaScriptExecutor click failed: " + ex.getMessage());
+            }
+
+            try {
+                actions.moveToElement(cartLogoButton).click().perform();
+                System.out.println("Cart button clicked successfully using Actions class.");
+                return;
+            } catch (Exception exc) {
+                System.err.println("Actions class click failed: " + exc.getMessage());
+            }
+        }
+        System.err.println("Failed to click cart button using multiple methods.");
+        throw new RuntimeException("Failed to click cart button"); // Explicitly throw an exception
+    }
 
 	
 

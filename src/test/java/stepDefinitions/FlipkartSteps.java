@@ -144,7 +144,8 @@ public class FlipkartSteps {
 
 	@When("I go to the cart")
 	public void i_go_to_the_cart() throws InterruptedException {
-		comparePage.clickCartButton();
+		//comparePage.clickCartButton();
+		comparePage.clickCartButtonWhenReady();
 	}
 
 	@When("I add my area Pincode")
