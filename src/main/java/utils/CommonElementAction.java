@@ -2,6 +2,7 @@ package utils;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,5 +37,12 @@ public class CommonElementAction {
 		return wait.until(ExpectedConditions.visibilityOf(webelement));
 	}
 	
+	public boolean isElementVisible(WebElement webelement) {
+		 try {
+		        return webelement.isDisplayed();
+		    } catch (org.openqa.selenium.NoSuchElementException e) {
+		        return false;
+		    }
+	}
 
 }

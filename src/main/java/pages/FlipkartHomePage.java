@@ -46,6 +46,9 @@ public class FlipkartHomePage {
 
 	@FindBy(xpath = "//a[text()='Window ACs']")
 	private WebElement windowAndACsButton;
+	
+	@FindBy(xpath = "(//span[text()='VIEW ALL'])[1]")
+	private WebElement viewAllButtonOfAirConditionrs;
 
 	/**
 	 * Closes the login popup if it is displayed on the home page.
@@ -70,12 +73,36 @@ public class FlipkartHomePage {
 
 	
 	public void hoverAndClickOnTvAndAppliances() {
-		commonElementAction.visibilityOfElement(tvAndAppliancesMenu);
-		actions.moveToElement(tvAndAppliancesMenu).perform();
+		try {
+			if(commonElementAction.isElementVisible(appliancesLink)) {
+				commonElementAction.visibilityOfElement(appliancesLink);
+				js.executeScript("arguments[0].click()", appliancesLink);
+				
+			}else {
+				System.out.println("Appliacne link is not available on flipkart homepage");
+			}
+			
+			commonElementAction.visibilityOfElement(tvAndAppliancesMenu);
+			actions.moveToElement(tvAndAppliancesMenu).click().perform();
+			//js.executeScript("arguments[0].click()", tvAndAppliancesMenu);
+		} catch (TimeoutException e) {
+			System.out.println("Tv and Appliance link was not visible within the timeout");
+		}
 	}
 
+	public void clicViewAllButtonAirConditionrs() {
+		try{
+			commonElementAction.visibilityOfElement(viewAllButtonOfAirConditionrs).click();
+		} catch(TimeoutException e) {
+			System.out.println("View all button of Air Conditionrs is not visible within the timeout");
+		}
+	}
 	
 	public void clickOnWindowAcButton() {
-		commonElementAction.visibilityOfElement(windowAndACsButton).click();
+		try{
+			commonElementAction.visibilityOfElement(windowAndACsButton).click();
+		} catch(TimeoutException e) {
+			System.out.println("windows and ac button not visible within the timeout");
+		}
 	}
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="runner.TestRunner" time="82.02" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="runner.TestRunner" time="97.41" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\RAM\.cache\selenium\chromedriver\win64\135.0.7049.114\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\RAM\AppData\Local\Temp\surefire8012269855712517493\surefirebooter-20250428231043999_3.jar C:\Users\RAM\AppData\Local\Temp\surefire8012269855712517493 2025-04-28T23-10-43_823-jvmRun1 surefire-20250428231043999_1tmp surefire_0-20250428231043999_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\RAM\AppData\Local\Temp\surefire7796402726785615181\surefirebooter-20250503202618243_3.jar C:\Users\RAM\AppData\Local\Temp\surefire7796402726785615181 2025-05-03T20-26-18_001-jvmRun1 surefire-20250503202618243_1tmp surefire_0-20250503202618243_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\RAM\Desktop\Java WorkSpace24\flipkart.e2e\target\test-classes;C:\Users\RAM\Desktop\Java WorkSpace24\flipkart.e2e\target\classes;C:\Users\RAM\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\RAM\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\RAM\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\RAM\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\RAM\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\RAM\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\RAM\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\RAM\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\RAM\.m2\repository\net\masterthought\cucumber-reporting\5.7.7\cucumber-reporting-5.7.7.jar;C:\Users\RAM\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\RAM\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\RAM\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\RAM\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\RAM\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\RAM\.m2\repository\joda-time\joda-time\2.12.5\joda-time-2.12.5.jar;C:\Users\RAM\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\RAM\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\RAM\.m2\repository\org\codehaus\plexus\plexus-utils\3.5.1\plexus-utils-3.5.1.jar;C:\Users\RAM\.m2\repository\org\jsoup\jsoup\1.16.1\jsoup-1.16.1.jar;C:\Users\RAM\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20220608.1\owasp-java-html-sanitizer-20220608.1.jar;C:\Users\RAM\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\RAM\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\RAM\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\RAM\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\RAM\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\RAM\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\RAM\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\RAM\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\RAM\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\RAM\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.0\selenium-java-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.0\selenium-api-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.0\selenium-chrome-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.0\selenium-chromium-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.0\selenium-json-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.0\selenium-manager-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.0\selenium-devtools-v118-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.0\selenium-devtools-v119-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.0\selenium-devtools-v120-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.0\selenium-devtools-v85-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.0\selenium-edge-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.0\selenium-firefox-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.0\selenium-http-4.16.0.jar;C:\Users\RAM\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.0\selenium-ie-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.0\selenium-remote-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\RAM\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\RAM\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.0\selenium-os-4.16.0.jar;C:\Users\RAM\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.0\selenium-safari-driver-4.16.0.jar;C:\Users\RAM\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.0\selenium-support-4.16.0.jar;C:\Users\RAM\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\RAM\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\RAM\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\RAM\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\RAM\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\RAM\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\RAM\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\RAM\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\RAM\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\RAM\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\RAM\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\RAM\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\RAM\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\RAM\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\RAM\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\RAM\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\RAM\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\RAM\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.0\log4j-core-2.22.0.jar;C:\Users\RAM\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.0\log4j-api-2.22.0.jar;C:\Users\RAM\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\RAM\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\RAM\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\RAM\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\RAM\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\RAM\AppData\Local\Temp\surefire8012269855712517493\surefirebooter-20250428231043999_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\RAM\AppData\Local\Temp\surefire7796402726785615181\surefirebooter-20250503202618243_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -57,23 +57,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Browse and Compare Window ACs and Check Availability&quot;, &quot;Flipkart e2e Automation Flow&quot;](1)" classname="runner.TestRunner" time="80.629">
+  <testcase name="runScenario[&quot;Browse and Compare Window ACs and Check Availability&quot;, &quot;Flipkart e2e Automation Flow&quot;](1)" classname="runner.TestRunner" time="95.629">
     <system-out><![CDATA[
 Scenario: Browse and Compare Window ACs and Check Availability                                   &amp#27;[90m# src/test/resources/features/flipkart_e2e.feature:3&amp#27;[0m
-Signout pop up is visiable 
-clicked on it
+Signout pop up was not visible or clickable within the timeout.
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI launch the browser and open Google&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.FlipkartSteps.i_launch_the_browser_and_open_google()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI type &amp#27;[0m&amp#27;[32m&amp#27;[1m'Flipkart'&amp#27;[0m&amp#27;[32m in the Google search field&amp#27;[0m                                              &amp#27;[90m# stepDefinitions.FlipkartSteps.i_type_in_the_google_search_field(java.lang.String)&amp#27;[0m
 --- Google Search Suggestions for 'Flipkart' ---
 Flipkart
-flipkart seller
 flipkart customer care number
+flipkart seller
 flipkart shopping
 flipkart customer care
 flipkart sale
 flipkart login
 flipkart india
-flipkart customer care number ahmedabad
+flipkart customer care number surat
 flipkart customer care number vadodara
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI print all the suggestions displayed in the google search field&amp#27;[0m                          &amp#27;[90m# stepDefinitions.FlipkartSteps.i_print_all_the_suggestions_displayed_in_the_google_search_field()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI hit Enter&amp#27;[0m                                                                                &amp#27;[90m# stepDefinitions.FlipkartSteps.i_hit_enter()&amp#27;[0m
@@ -83,6 +82,7 @@ flipkart customer care number vadodara
 Login popup not displayed or could not be closed.
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI close the login popup (If available)&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.FlipkartSteps.i_close_the_login_popup_if_available()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on 'Appliances'&amp#27;[0m                                                                   &amp#27;[90m# stepDefinitions.FlipkartSteps.i_click_on()&amp#27;[0m
+Appliacne link is not available on flipkart homepage
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI hover over 'TV & Appliances'&amp#27;[0m                                                             &amp#27;[90m# stepDefinitions.FlipkartSteps.i_hover_over()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on 'Window ACs'&amp#27;[0m                                                                    &amp#27;[90m# stepDefinitions.FlipkartSteps.I_click_on_Window_ACs()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mwindow ACs list is displayed&amp#27;[0m                                                              &amp#27;[90m# stepDefinitions.FlipkartSteps.window_a_cs_list_is_displayed()&amp#27;[0m
@@ -96,15 +96,17 @@ You have already selected 4 products
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on Compare&amp#27;[0m                                                                        &amp#27;[90m# stepDefinitions.FlipkartSteps.i_click_on_compare()&amp#27;[0m
 
 --- Products on Compare Page ---
-1: Panasonic 2025 Model 1.5 Ton 5 Star Split Inverter AC with Wi-fi Connect - White, Price: ₹43,990
-2: Voltas 2023 Model 1.5 Ton 5 Star Window Inverter AC - White, Price: ₹36,999
-3: CARRIER 2025 Model 1.5 Ton 5 Star Window Inverter AC - White, Price: ₹35,490
-4: Panasonic 2025 Model 1.5 Ton 3 Star Split Inverter AC with Wi-fi Connect - White, Price: ₹36,490
+1: SAMSUNG 2025 Model Windfree Technology,Bespoke AI, 5 Step Convertible 1.5 Ton 3 Star Split Inverter with Powerful cooling & Energy saving, 120% expandable AC with Wi-fi Connect - White, Price: ₹41,490
+2: IFB 2025 Model Silver Plus Series 1.5 Ton 5 Star Split Inverter with HD Compressor, AI, Dual Gold Fin, Nano Tek Coating & 8-in-1 Flexi Mode AC - White, Price: ₹38,990
+3: Panasonic 2025 Model 1.5 Ton 5 Star Split Inverter AC with Wi-fi Connect - White, Price: ₹43,990
+4: CARRIER 2025 Model 6 in 1 Convertible 1 Ton 3 Star Split Inverter AC with Wi-fi Connect - White, Price: ₹31,990
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI print Name and Price of all products in console&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.FlipkartSteps.i_print_name_and_price_of_all_products_in_console()&amp#27;[0m
 adding product for --> 1
 Navigated to Place Order. Navigating back...
 Finished adding products to cart...
-Add to cart button is disabled for index: 2 (Skipping sponsored?)
+adding product for --> 2
+Navigated to Place Order. Navigating back...
+Finished adding products to cart...
 adding product for --> 3
 Navigated to Place Order. Navigating back...
 Finished adding products to cart...
@@ -112,6 +114,10 @@ adding product for --> 4
 Navigated to Place Order. Navigating back...
 Finished adding products to cart...
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add the 1st, 2nd, 3rd, and 4th products to cart&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.FlipkartSteps.i_add_the_1st_2nd_3rd_and_4th_products_to_cart()&amp#27;[0m
+Current URL: https://www.flipkart.com/air_conditioner_new/compare?ids=ACNH7SAPYKWRQPK9,ACNH89DZFTRPZDSG,ACNH8EYXHDFAREWW,ACNH8NPZHAFYQK3K&otracker=compare_product_4
+Cart button is displayed and enabled: true - true
+Tag name of cart button: a
+Cart button clicked successfully using WebDriverWait.
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI go to the cart&amp#27;[0m                                                                           &amp#27;[90m# stepDefinitions.FlipkartSteps.i_go_to_the_cart()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI add my area Pincode&amp#27;[0m                                                                      &amp#27;[90m# stepDefinitions.FlipkartSteps.i_add_my_area_pincode()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI check the availability of the product in the console&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.FlipkartSteps.i_check_the_availability_of_the_product_in_the_console()&amp#27;[0m
@@ -119,21 +125,24 @@ Pin code is valid so products are available
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe product is not available&amp#27;[0m                                                              &amp#27;[90m# stepDefinitions.FlipkartSteps.the_product_is_not_available()&amp#27;[0m
 No need to change the pincode
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI change the pincode to a valid pincode&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.FlipkartSteps.i_change_the_pincode_to_a_valid_pincode()&amp#27;[0m
-Available product names : Panasonic 2025 Model 1.5 Ton 3 Star Split Inverter AC with Wi-fi Connect - White
-CS-SU18AKY3W/CU-SU18AKY3W, Copper Condenser
-Available product names : CARRIER 2025 Model 1.5 Ton 5 Star Window Inverter AC - White
-CIW19SC5R35F0, Copper Condenser
-Element went stale...
+Available product names : CARRIER 2025 Model 6 in 1 Convertible 1 Ton 3 Star Split Inverter AC with Wi-fi Connect - White
+CAI12EE3R35W0, Copper Condenser
+Available product names : Panasonic 2025 Model 1.5 Ton 5 Star Split Inverter AC with Wi-fi Connect - White
+CS-NU18AKY5WX/CU-NU18AKY5WX, Copper Condenser
+Available product names : IFB 2025 Model Silver Plus Series 1.5 Ton 5 Star Split Inverter with HD Compressor, AI, Dual Gold Fin, Nano Tek Coating & 8-in-1 Flexi Mode AC - White
+CI185SL22RGN1, Copper Condenser
+Available product names : SAMSUNG 2025 Model Windfree Technology,Bespoke AI, 5 Step Convertible 1.5 Ton 3 Star Split Inverter with Powerful cooling & Energy saving, 120% expandable AC with Wi-fi Connect - White
+AR60F19D1XWXNA,//AR60F19D1XWNNA, Copper Condenser
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI print the message displayed for the availability/delivery of the product in the console&amp#27;[0m &amp#27;[90m# stepDefinitions.FlipkartSteps.i_print_the_message_displayed_for_the_availability_delivery_of_the_product_in_the_console()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI close the browser&amp#27;[0m                                                                        &amp#27;[90m# stepDefinitions.FlipkartSteps.i_close_the_browser()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Apr 28, 2025 11:10:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 03, 2025 8:26:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 135
-Apr 28, 2025 11:10:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 135.0.7049.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+May 03, 2025 8:26:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.116. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
 </testsuite>

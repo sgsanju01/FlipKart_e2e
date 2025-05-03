@@ -74,7 +74,7 @@ public class FlipkartSteps {
 
 	@When("I click on 'Appliances'")
 	public void i_click_on() {
-		flipkartHomePage.clickOnAppliances();
+		//flipkartHomePage.clickOnAppliances();
 	}
 
 	@When("I hover over 'TV & Appliances'")
@@ -85,7 +85,9 @@ public class FlipkartSteps {
 	
 	@When("I click on 'Window ACs'")
 	public void I_click_on_Window_ACs() {
-		flipkartHomePage.clickOnWindowAcButton();
+		flipkartHomePage.clicViewAllButtonAirConditionrs();
+		//flipkartHomePage.clickOnWindowAcButton();
+		
 	}
 
 	@Then("window ACs list is displayed")
