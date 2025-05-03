@@ -125,10 +125,11 @@ public class ComparePage {
 	public void clickCartButton() throws InterruptedException{
 		System.out.println("Current URL: " + driver.getCurrentUrl());
 		System.out.println("Cart button is displayed and enabled: " + cartLogoButton.isDisplayed() + " - " + cartLogoButton.isEnabled());
-		Thread.sleep(10);
-		System.out.println("After wait Cart button is displayed and enabled: " + cartLogoButton.isDisplayed() + " - " + cartLogoButton.isEnabled());
+		//Thread.sleep(10);
+		
 		System.out.println("Tag name of cart button: " + cartLogoButton.getTagName());
-
+		wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton));
+		System.out.println("After webdriver wait Cart button is displayed and enabled: " + cartLogoButton.isDisplayed() + " - " + cartLogoButton.isEnabled());
 		if (cartLogoButton.isDisplayed() && cartLogoButton.isEnabled()) {
 			try {
 				wait.until(ExpectedConditions.elementToBeClickable(cartLogoButton)).click();
