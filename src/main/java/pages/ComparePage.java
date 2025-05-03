@@ -44,7 +44,6 @@ public class ComparePage {
 	private List<WebElement> ACsProductPrice;
 
 	@FindBy(xpath = ".//button[contains(text(),'Add to cart')]")
-	
 	private List<WebElement> addToCartButtons;
 
 	@FindBy(xpath = "//button[contains(text(),'GO TO CART') and not (@disabled)]")
@@ -124,6 +123,7 @@ public class ComparePage {
 
 	public void clickCartButton() throws InterruptedException{
 		System.out.println("Current URL: " + driver.getCurrentUrl());
+		System.out.println("Current URL: " + goToCartButton.getText());
 		System.out.println("Cart button is displayed and enabled: " + cartLogoButton.isDisplayed() + " - " + cartLogoButton.isEnabled());
 		//Thread.sleep(10);
 		
